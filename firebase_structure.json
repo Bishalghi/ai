@@ -1,0 +1,73 @@
+{
+  "users": {
+    "user_id_1": {
+      "name": "Pro Gamer",
+      "email": "gamer@example.com",
+      "phone": "9800000000",
+      "balance": 1500,
+      "role": "user",
+      "createdAt": 1715420000000,
+      "fcmToken": "token_string_for_notifications"
+    }
+  },
+  "games": {
+    "freefire": {
+      "name": "Free Fire",
+      "publisher": "Garena",
+      "image": "https://url_to_icon",
+      "coverImage": "https://url_to_cover",
+      "currencyName": "Diamonds",
+      "placeholderId": "UID",
+      "isActive": true
+    }
+  },
+  "tournaments": {
+    "tn_ff_1": {
+      "gameId": "freefire",
+      "title": "FF Weekly Scrims",
+      "entryFee": 50,
+      "prizePool": 5000,
+      "totalSlots": 48,
+      "joinedSlots": 12,
+      "startTime": 1716000000000,
+      "status": "Upcoming",
+      "type": "Solo",
+      "map": "Bermuda",
+      "rules": ["No hackers", "Level 40+ required"],
+      "bannerImage": "https://url_to_banner"
+    }
+  },
+  "tournament_participants": {
+    "tn_ff_1": {
+      "user_id_1": {
+        "inGameId": "12345678",
+        "inGameName": "ProPlayer_NP",
+        "timestamp": 1715422000000
+      }
+    }
+  },
+  "orders": {
+    "order_id_1": {
+      "userId": "user_id_1",
+      "gameId": "freefire",
+      "packageId": "pkg_ff_1",
+      "gameName": "Free Fire",
+      "packageName": "100 Diamonds",
+      "playerId": "12345678",
+      "price": 110,
+      "status": "pending",
+      "timestamp": 1715421000000
+    }
+  },
+  "wallet_transactions": {
+    "tx_id_1": {
+      "userId": "user_id_1",
+      "type": "WALLET_LOAD",
+      "amount": 1000,
+      "method": "esewa",
+      "status": "success",
+      "timestamp": 1715420500000,
+      "refId": "esewa_ref_123"
+    }
+  }
+}
